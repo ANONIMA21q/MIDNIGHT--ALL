@@ -93,6 +93,14 @@ titleTxt.Text="midnight"; titleTxt.Font=Enum.Font.Code; titleTxt.TextSize=15; ti
 titleTxt.TextXAlignment=Enum.TextXAlignment.Left
 local titleDrag=Instance.new("Frame",main); titleDrag.Size=UDim2.new(1,0,0,32); titleDrag.BackgroundTransparency=1
 drag(main,titleDrag)
+-- botão FECHAR (X) no canto superior direito
+local closeX=Instance.new("TextButton",main); closeX.Size=UDim2.fromOffset(22,22); closeX.Position=UDim2.new(1,-28,0,6)
+closeX.AutoButtonColor=false; closeX.BackgroundColor3=C.Card; closeX.BorderSizePixel=0; closeX.Text="✕"
+closeX.Font=Enum.Font.Code; closeX.TextSize=14; closeX.TextColor3=C.Red; closeX.ZIndex=5
+corner(closeX,4); stroke(closeX,C.Border,1,0.2)
+closeX.MouseEnter:Connect(function() tw(closeX,{BackgroundColor3=C.Red},0.1); closeX.TextColor3=C.White end)
+closeX.MouseLeave:Connect(function() tw(closeX,{BackgroundColor3=C.Card},0.1); closeX.TextColor3=C.Red end)
+closeX.MouseButton1Click:Connect(function() tw(main,{BackgroundTransparency=1},0.12); task.wait(0.12); gui:Destroy() end)
 
 -- ===== ABAS =====
 local TABS = { "Scripts", "Info", "Settings" }
@@ -259,5 +267,5 @@ end)
 print("=====================================")
 print("  midnight all  |  by Th.exe")
 print("  aba Scripts -> 👉 pra abrir")
-print("  [END] esconde o painel")
+print("  [END] esconde o painel | [X] fecha")
 print("=====================================")
