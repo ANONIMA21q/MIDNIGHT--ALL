@@ -26,6 +26,7 @@ local SCRIPTS = {
     { name="Sewer Scream",      url="https://raw.githubusercontent.com/ANONIMA21q/SEWER-SCREAM/refs/heads/main/Codigo%20SEWER%20SCREAM" },
     { name="Midnight Infinity", url="https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source" },
     { name="Midnight Universal",url="https://raw.githubusercontent.com/ANONIMA21q/MIDNIGHT-HUB-PREMIUM/refs/heads/main/MIDNIGHT%20HUB%20PREMIUM" },
+    { name="Midnight Aim Lock", url="https://raw.githubusercontent.com/ANONIMA21q/MIDNIGHT-AIMLOCK/refs/heads/main/CODIGO" },
 }
 
 local CFG = { KeepOnTop = true, ShowAvatar = true }
