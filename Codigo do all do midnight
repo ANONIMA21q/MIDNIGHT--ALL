@@ -27,6 +27,7 @@ local SCRIPTS = {
     { name="Midnight Infinity", url="https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source" },
     { name="Midnight Universal",url="https://raw.githubusercontent.com/ANONIMA21q/MIDNIGHT-HUB-PREMIUM/refs/heads/main/MIDNIGHT%20HUB%20PREMIUM" },
     { name="Midnight Aim Lock", url="https://raw.githubusercontent.com/ANONIMA21q/MIDNIGHT-AIMLOCK/refs/heads/main/CODIGO" },
+    { name="Midnight Drive",    url="https://raw.githubusercontent.com/ANONIMA21q/DRIVE-SIMULA/refs/heads/main/CODIGO" },
 }
 
 local CFG = { KeepOnTop = true, ShowAvatar = true }
